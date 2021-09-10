@@ -1,0 +1,25 @@
+{
+    "name": "exelentshakil/cppay",
+    "description": "A WordPress plugin to handle ContentPress payment",
+    "type": "wordpress-plugin",
+    "license": "GPLV2",
+    "authors": [
+        {
+            "name": "exelentshakil",
+            "email": "exelentshakil@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "CP\\Pay\\": "includes/"
+        },
+        "files": ["includes/functions.php"]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "require": {
+        "stripe/stripe-php": "^7.95"
+    }
+}
